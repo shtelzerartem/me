@@ -34,17 +34,22 @@
 <details open>
 <summary>Table of Contents</summary>
 
-- [Demo](#demo)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+- [🚀 AstroWind](#-astrowind)
+  - [Features](#features)
+  - [Demo](#demo)
+  - [Getting started](#getting-started)
+    - [Project structure](#project-structure)
+    - [Commands](#commands)
+    - [Configuration](#configuration)
+    - [Deploy](#deploy)
+      - [Deploy to production (manual)](#deploy-to-production-manual)
+      - [Deploy to Netlify](#deploy-to-netlify)
+      - [Deploy to Vercel](#deploy-to-vercel)
+  - [Frequently Asked Questions](#frequently-asked-questions)
+  - [Related projects](#related-projects)
+  - [Contributing](#contributing)
+  - [Acknowledgements](#acknowledgements)
+  - [License](#license)
 
 </details>
 
@@ -172,32 +177,32 @@ const CONFIG = {
   googleSiteVerificationId: false, // Or some value,
 
   blog: {
-    disabled: false,
-    postsPerPage: 4,
+    disabled: true,
+    // postsPerPage: 4,
 
-    post: {
-      permalink: '/%slug%', // variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      noindex: false,
-      disabled: false,
-    },
+    // post: {
+    //   permalink: '/%slug%', // variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+    //   noindex: false,
+    //   disabled: false,
+    // },
 
-    list: {
-      pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
-      noindex: false,
-      disabled: false,
-    },
+    // list: {
+    //   pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
+    //   noindex: false,
+    //   disabled: false,
+    // },
 
-    category: {
-      pathname: 'category', // Category main path /category/some-category
-      noindex: true,
-      disabled: false,
-    },
+    // category: {
+    //   pathname: 'category', // Category main path /category/some-category
+    //   noindex: true,
+    //   disabled: false,
+    // },
 
-    tag: {
-      pathname: 'tag', // Tag main path /tag/some-tag
-      noindex: true,
-      disabled: false,
-    },
+    // tag: {
+    //   pathname: 'tag', // Tag main path /tag/some-tag
+    //   noindex: true,
+    //   disabled: false,
+    // },
   },
 };
 ```
