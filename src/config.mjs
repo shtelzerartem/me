@@ -1,5 +1,7 @@
 import defaultImage from './assets/images/default.png';
 
+const env = import.meta.env;
+
 const CONFIG = {
   name: 'artem stelzer',
 
@@ -23,8 +25,8 @@ const CONFIG = {
     timeZone: 'UTC',
   }),
 
-  googleAnalyticsId: 'G-9KE2HDF0BP', // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: false,
+  googleAnalyticsId: env.GOOGLE_ANALYTICS_ID || false, // "G-XXXXXXXXXX",
+  googleSiteVerificationId: env.GOOGLE_SITE_VERIFICAION_ID || false,
 
   blog: {
     disabled: false,
